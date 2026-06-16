@@ -3,7 +3,7 @@
 ## Rule 1 — Think Before Coding
 
 - State assumptions explicitly before acting.
-- Ask rather than guess when requirements are ambiguous.
+- Ask rather than guess when ambiguity affects correctness, safety, architecture, data ownership, or user intent.
 - Push back when a simpler approach exists.
 - Stop and clarify when confused — do not proceed on uncertainty.
 
@@ -29,7 +29,8 @@
 ## Rule 4 — Goal-Driven Execution
 
 - Turn vague commands into verifiable milestones before coding.
-- Write tests that fail first (red), apply the fix, confirm they pass (green).
+- For behavior changes, write or update a failing test first (red), apply the fix, then confirm it passes (green).
+- For docs, config, or mechanical changes, define the smallest relevant verification instead of forcing a test harness.
 - Each step should have a clear definition of done.
 
 ---
@@ -52,7 +53,7 @@
 
 ## Rule 7 — Checkpoint Operations
 
-- Summarize progress after each meaningful step.
+- For multi-step work, summarize progress after each meaningful step.
 - Pause if you cannot describe the current state clearly.
 - Do not continue building on an unclear or unverified foundation.
 
@@ -132,7 +133,7 @@ Include behavior, interfaces, or architecture — whatever changed and why.
 - Always run the project's linter (e.g., Pylint, ESLint, Ruff) after code changes.
 - Fix linting issues introduced by your changes.
 - Design code so it does not require lint ignores. Refactor or restructure first — do not silence the linter to avoid changing code.
-- **Try/catch is the routine exception.** Linters often flag catch patterns (`bare except`, broad `Exception`, empty handlers) that are intentional. A targeted ignore there is acceptable when the catch behavior is correct.
+- Exception handling is the narrow exception. Linters sometimes flag catch patterns (`bare except`, broad `Exception`, empty handlers) that are intentional. A targeted ignore is acceptable only when the catch behavior is deliberate, bounded, and documented.
 - For any other lint ignore, use it only when that design is **objectively better** than the lint-clean alternative — not because fixing the lint is inconvenient.
 - Every lint ignore must include a brief comment explaining **why** the ignored design is better than complying with the rule.
 
@@ -172,7 +173,7 @@ Apply these principles unless the codebase explicitly does otherwise:
 
 ## Rule 19 — Feature Documentation
 
-`docs/feature/*.md` holds the **detailed** documentation for each feature — behavior, configuration, examples, edge cases, and limitations. One file per feature.
+When the project uses feature documentation, `docs/feature/*.md` holds the **detailed** documentation for each feature — behavior, configuration, examples, edge cases, and limitations. One file per feature.
 
 Keep it in sync with feature changes:
 
