@@ -32,7 +32,7 @@ Edit the Markdown files and open a pull request.
 | 1 | Think Before Coding | Ask, don't guess |
 | 2 | Simplicity First | Minimum viable code |
 | 3 | Surgical Changes | Touch only what's needed |
-| 4 | Goal-Driven Execution | Verifiable milestones, TDD |
+| 4 | Goal-Driven Execution | Verifiable milestones, proportional tests |
 | 5 | Read Before Writing | Inspect before editing |
 | 6 | Tests Verify Intent | Test why, not just what |
 | 7 | Checkpoint Operations | Summarize and pause when unclear |
@@ -47,7 +47,7 @@ Edit the Markdown files and open a pull request.
 | 16 | Linting | Fix linter issues; avoid ignores unless objectively better |
 | 17 | Red Lines | Stop on ownership, blast radius, security, etc. |
 | 18 | Coding Principles | SoC, SRP, KISS, YAGNI, DRY, DI |
-| 19 | Feature Documentation | Sync `docs/feature/*.md` with feature changes |
+| 19 | Feature Documentation | Sync project feature docs with feature changes |
 | 20 | README | Maintain root `README.md` with required sections |
 
 ## Releases
