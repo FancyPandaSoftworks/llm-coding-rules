@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/FancyPandaSoftworks/llm-rules/compare/v1.1.0...v1.2.0) (2026-06-16)
+
+
+### Features
+
+* tighten rule guidance ([#3](https://github.com/FancyPandaSoftworks/llm-rules/issues/3)) ([91f09b3](https://github.com/FancyPandaSoftworks/llm-rules/commit/91f09b3e500ef9b0089048f2c553e862e608871c))
+
 ## [1.1.0](https://github.com/FancyPandaSoftworks/llm-rules/compare/v1.0.0...v1.1.0) (2026-06-16)
 
 
