@@ -54,6 +54,8 @@ Edit the Markdown files and open a pull request.
 
 Versioning is automated by [Release Please](.github/workflows/release-please.yml) on merge to `main`. Use [Conventional Commits](https://www.conventionalcommits.org/) in PR titles (e.g. `feat: add rule 19`).
 
+The workflow expects a `RELEASE_PLEASE_TOKEN` GitHub Actions secret. Use a fine-grained personal access token with access to this repository and the permissions needed to write contents and pull requests.
+
 ## Contributing
 
 Rule changes should be specific, practical, and easy to apply across real codebases. See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
