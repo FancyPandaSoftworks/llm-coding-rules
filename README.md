@@ -19,8 +19,8 @@ This is a documentation-only project. There is no build step and no runtime depe
 To work on the rules locally:
 
 ```sh
-git clone https://github.com/FancyPandaSoftworks/llm-rules.git
-cd llm-rules
+git clone https://github.com/FancyPandaSoftworks/llm-coding-rules.git
+cd llm-coding-rules
 ```
 
 Edit the Markdown files and open a pull request.
